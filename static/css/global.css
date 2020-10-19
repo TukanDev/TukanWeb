@@ -52,7 +52,7 @@ a
 }
 a:hover
 {
-    color: darkgray;
+    color: green;
 }
 .dugmici
 {
@@ -75,4 +75,209 @@ a:hover
 .hdrTxt:hover
 {
     color: darkgray;
+}
+
+nav {
+	padding-top: 15px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 8vh;
+	font-family: 'Poppins', sans-serif;
+}
+
+.nav-logo {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+.nav-logo p {
+	transition-duration: 0.6s;
+}
+
+.nav-logo p:hover {
+	color: gray;
+}
+
+.nav-logo p {
+	font-family: 'Arteron', sans-serif;
+	display: inline;
+	text-transform: uppercase;
+	font-size: 20px;
+	letter-spacing: 1px;
+	margin-left: 10px;
+}
+
+.linkoviMraleu li {
+	list-style: none;
+}
+
+.linkoviMraleu {
+	text-transform: uppercase;
+	display: flex;
+	justify-content: space-around;
+	width: 35%;
+}
+
+.linkoviMraleu a {
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 14px;
+	transition-duration: 0.6s;
+}
+
+.linkoviMraleu a:hover {
+	color: green;
+}
+
+.jediSelektor {
+	display: none;
+}
+
+.jediSelektor div {
+	background-color: white;
+	width: 25px;
+	height: 3px;
+	margin: 5px;
+	transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+	body {
+		overflow-x: hidden;
+	}
+	.linkoviMraleu {
+		position: absolute;
+		right: 0px;
+		height: 100%;
+		top: 15vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 50%;
+		transform: translateX(100%);
+		transition: transform 0.5s ease-in;
+	}
+	.linkoviMraleu a {
+		color: white;
+	}
+	.linkoviMraleu li {
+		opacity: 0;
+	}
+	.jediSelektor {
+		display: block;
+		cursor: pointer;
+	}
+	.slikaBrale {
+		width: 30% !important;
+		height: 30% !important;
+		border-radius: 50%;
+	}
+}
+
+.otvoren {
+	transform: translateX(0%);
+}
+
+@keyframes rokaj {
+	from {
+		opacity: 0;
+		transform: translateX(50px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+.metnut .linija1 {
+	transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.metnut .linija2{
+	opacity: 0;
+}
+
+.metnut .linija3 {
+	transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  border: none;
+  outline: none;
+  color: white;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #161a1c;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #161a1c;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.navigejsn .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .navigejsn a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .naviejsn a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navigejsn.responsive {position: relative;}
+  .naviejsn.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navigejsn.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .navigejsn.responsive .dropdown {float: none;}
+  .navigejsn.responsive .dropdown-content {position: relative;}
+  .navigejsn.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
 }
