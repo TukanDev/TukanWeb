@@ -1,0 +1,78 @@
+::selection {
+    color: #000;
+    background: #fff;
+}
+::-moz-selection {
+    color: #000;
+    background: #fff;
+}
+img::selection 
+{
+    color: none;
+    background: none;
+}
+img::-moz-selection
+{
+    color: none;
+    background: none;
+}
+.avatar
+{
+    vertical-align: middle;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+.infoTop
+{
+    margin-top: 105px;
+}
+#dojajaFont
+{
+    font-family: 'SamsungThin';
+}
+.name
+{
+    font-size: 35px;
+    line-height: 1px;
+}
+.thicc
+{
+    font-family: 'SamsungBold';
+}
+.slogan
+{
+    line-height: 0px;
+}
+a
+{
+    color: #fff;
+    text-decoration: none;
+    transition-duration: 0.6s;
+}
+a:hover
+{
+    color: darkgray;
+}
+.dugmici
+{
+    margin-top: 35px !important;
+    font-size: 25px;
+}
+.sekcija
+{
+    margin-top: 55px;
+    font-family: 'SamsungThin';
+}
+.hdrTxt
+{
+    font-family: 'SamsungBold';
+    font-size: 30px;
+    color: #fff;
+    line-height: 5px;
+    transition-duration: 0.6s;
+}
+.hdrTxt:hover
+{
+    color: darkgray;
+}

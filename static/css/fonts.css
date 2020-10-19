@@ -1,0 +1,24 @@
+@font-face 
+{
+    font-family: 'RobotoBlack';
+    src:url('../fonts/Roboto-Black.ttf');
+    src:format('truetype');  
+}
+@font-face 
+{
+    font-family: 'SamsungReg';
+    src:url('../fonts/SamsungSans-Regular.ttf');
+    src:format('truetype');  
+}
+@font-face 
+{
+    font-family: 'SamsungThin';
+    src:url('../fonts/SamsungSans-Thin.ttf');
+    src:format('truetype');  
+}
+@font-face 
+{
+    font-family: 'SamsungBold';
+    src:url('../fonts/SamsungSans-Bold.ttf');
+    src:format('truetype');  
+}
