@@ -86,9 +86,58 @@
           <a href="https://instagram.com/tukandevofficial"><i class="fab fa-instagram"></i></a>
           <a href="mailto:contact@tukandev.xyz"><i class="fa fa-envelope"></i></a>
           <a href="https://github.com/tukandev"><i class="fab fa-github"></i></a>
-		  <div class="tooltip"><a href="https://discord.com/invite/YbPYAha"><i class="fab fa-discord"></i></a>
+	<style>
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px transparent;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: transparent;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  padding: 4px 0;
+  border-radius: 6px;
+
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: -90%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #fff transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip-bottom {
+    top: 125%;
+    left: 50%;
+    margin-left: -60px;
+}
+	</style>
+<div class="tooltip"><a href="https://discord.com/invite/YbPYAha"><i class="fab fa-discord"></i></a>
   <span class="tooltiptext tooltip-bottom">TukanDev#6988</span>
-</div>
+         </div>
         </div>
       </div>
       <div class="about sekcija">
